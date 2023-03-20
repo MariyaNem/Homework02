@@ -32,3 +32,11 @@ for x in range(sum):
     for y in range(sum):
         if x + y == sum and x * y == product:
             print('X = ', x, 'Y =', y)
+
+
+# Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N
+n = int(input('Введите число n: '))
+k = 1
+while 2**k <= n:
+    print(2, 'в степени', k, '=', 2**k)
+    k+=1
