@@ -3,21 +3,21 @@
 # той же стороной. Выведите минимальное количество монет, которые нужно перевернуть.
 
 n = int(input('На столе лежит монет: '))
-eagle_flip_penny = 0
-tail_flip_penny = 0
+eagle_flip_coin = 0
+tail_flip_coin = 0
 for i in range(n):
-    penny = str(input('Орёл или решка?: '))
-    while penny!='орёл' and penny!='решка':
+    coin = str(input('Орёл или решка?: '))
+    while coin!='орёл' and coin!='решка':
         print('Кажется, вы ввели что-то не то')
-        penny = str(input('Орёл или решка?: '))
-    if penny == 'орёл':
-        eagle_flip_penny += 1
-    elif penny == 'решка':
-        tail_flip_penny += 1
-if eagle_flip_penny > tail_flip_penny:
-    print(tail_flip_penny)
+        coin = str(input('Орёл или решка?: '))
+    if coin == 'орёл':
+        eagle_flip_coin += 1
+    elif coin == 'решка':
+        tail_flip_coin += 1
+if eagle_flip_coin > tail_flip_coin:
+    print(tail_flip_coin)
 else:
-    print(eagle_flip_penny)
+    print(eagle_flip_coin)
 
 
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике.
